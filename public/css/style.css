@@ -756,7 +756,6 @@
   }
   
   
-  
   @media screen and (min-width: 320px) {
     html {
       font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -774,6 +773,11 @@
   @media (max-width: 360px) {
     .nav-bottom {
       width: 320px;
+      min-width: 310px !important;
+    }
+
+    ul.nav li {
+      float: none;
     }
   }
   
