@@ -8,6 +8,8 @@ const expressLayouts = require('express-ejs-layouts')
 const port = process.env.PORT || 3000
 
 const indexRouter = require('./routes/index')
+const servicesRouter = require('./routes/services')
+const workRouter = require('./routes/work')
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -29,6 +31,8 @@ mongoose.connect(process.env.URI , { useNewUrlParser : true, useUnifiedTopology 
 */
 
 app.use('/', indexRouter)
+app.use('/services', servicesRouter)
+app.use('/work', workRouter)
 
 app.listen(port, () => {
     console.log(`Starting server at ${port}`)
