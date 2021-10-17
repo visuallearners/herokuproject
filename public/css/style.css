@@ -1047,10 +1047,11 @@
   }
   
   .container form {
-    /*width: 100%;*/
+    min-width: 200px;
+    width: 100%;
     /*display: grid;*/
     background: #efefef;
-    /*padding: 10px 10px;*/
+    padding: 10px 0px;
   }
   
   .container form .name, .container form .company, .container form .email, .container form .tele {
@@ -1115,7 +1116,7 @@
   }
   
   /*
-  @media (min-width: 700px) {
+  @media (max-width: 640px) {
     .container h2 {
       justify-content: flex-start;
       align-items: flex-end;

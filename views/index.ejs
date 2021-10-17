@@ -6,7 +6,7 @@
         <h2 class="hero">Save time and money - get started now!</h2>
         <!--div class="call"><span>View All</span></div-->
         <div class="sub-btn">
-        <button class="button-two"><span>Get Started</span></button>
+        <button class="button-two" onclick="location.href='http://localhost:3000/orderForm'" type="button"><span>Get Started</span></button>
       </div>
       </div>
     </div>
@@ -185,18 +185,18 @@
           <div class="col two">
               <!-- info container -->
               <section class="info">
-                  <h3>Acme web design</h3>
+                  <h3>Your preferred Assignment Masters</h3>
                   <p>
                       <i class="fas fa-road"></i>
-                       <small>44 something st</small>
+                       <small>Connect with us today!</small>
                   </p>
                   <p>
                       <i class="fas fa-phone-alt"></i>
-                      <small>(666) 666-6666</small>
+                      <small>(+254) 712-679-390</small>
                   </p>
                   <p>
                       <i class="fas fa-envelope"></i>
-                      <small>something@gmail.com</small>
+                      <small>Visuallearners@gmail.com</small>
                   </p>
               </section>
           </div>
@@ -212,7 +212,7 @@
                   </div>
                   <!-- Company -->
                   <div class="company">
-                      <label for="company">Company</label>
+                      <label for="company">Your School</label>
                       <br>
                       <input type="text" id="company" required>
                   </div>
@@ -220,23 +220,23 @@
                   <div class="email">
                       <label for="email">Email</label>
                       <br>
-                      <input type="email" id="email" required>
+                      <input type="email" id="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
                   </div>
                   <!-- Telephone -->
                   <div class="tele">
-                      <label for="telephone">Phone Number</label>
+                      <label for="telephone">WhatsApp Number</label>
                       <br>
                       <input type="tel" id="telephone" required>
                   </div>
                   <!-- Message -->
                   <div class="message">
-                      <label for="message">Message</label>
+                      <label for="message">Type your message here...</label>
                       <br>
                       <textarea id="message" ></textarea>
                   </div>
                   <!-- Submit -->
                   <div class="submit">
-                      <input type="submit" value="SUBMIT">
+                      <input type="submit" onclick="location.href='http://localhost:3000/gratMssg'" type="button" value="SUBMIT">
                   </div>
               </form>
           </div>

@@ -10,6 +10,9 @@ const port = process.env.PORT || 3000
 const indexRouter = require('./routes/index')
 const servicesRouter = require('./routes/services')
 const workRouter = require('./routes/work')
+const orderFormRouter = require('./routes/orderForm')
+const gratMssgRouter = require('./routes/gratMssg')
+
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -33,7 +36,12 @@ mongoose.connect(process.env.URI , { useNewUrlParser : true, useUnifiedTopology 
 app.use('/', indexRouter)
 app.use('/services', servicesRouter)
 app.use('/work', workRouter)
+app.use('/orderForm', orderFormRouter)
+app.use('/gratMssg', gratMssgRouter)
 
 app.listen(port, () => {
     console.log(`Starting server at ${port}`)
 })
+
+// docker.io/18dec1989/visuallearner:1.0 
+// sha256:90988f27884ac10f74ffdfcd2d87f199ad0b114115faeceb973162a31b029ca3
